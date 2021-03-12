@@ -27,8 +27,8 @@ line.bot:
 #logging.level:
 #   com.linecorp.bot.client.wire: INFO
 
-# spring:
-#   datasource:
-#     url: 'ec2-54-225-190-241.compute-1.amazonaws.com'
-#     username: 'bfdxdiynjljokx'
-#     password: '0eeb528be0aa20cf7acd2c2495ad70f488bff6ce51f76a12e0d99f8b58c7ef51'
+spring:
+  datasource:
+    url: ec2-54-225-190-241.compute-1.amazonaws.com
+    username: bfdxdiynjljokx
+    password: 0eeb528be0aa20cf7acd2c2495ad70f488bff6ce51f76a12e0d99f8b58c7ef51
