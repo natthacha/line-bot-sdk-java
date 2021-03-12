@@ -13,8 +13,8 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-This is a template for the configuration file.
-Make a copy called `application.yml` and change the values below.
+# This is a template for the configuration file.
+# Make a copy called `application.yml` and change the values below.
 
 line.bot:
   channel-token: 3YVuGNs6cXdw6Mwn7edte3kxzIJplc04DSujpBZqY9ESSw4AxjiKnwVw/juIMmMy8D/W0ixUX3SzMK3KQQ1qSUWT9m5DnUVCIj6XZJmQ+grOEM9UXz7PlapsuBAUdyMd9hc3RLAbnUanhuo8v+KVEgdB04t89/1O/w1cDnyilFU=
