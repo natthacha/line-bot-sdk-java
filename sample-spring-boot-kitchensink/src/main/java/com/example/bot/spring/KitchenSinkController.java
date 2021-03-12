@@ -687,4 +687,25 @@ public class KitchenSinkController {
         Path path;
         URI uri;
     }
+    
+    @Configuration
+    public class MainConfig {
+
+        @Bean
+        public BasicDataSource dataSource() throws URISyntaxException {
+            URI dbUri = new URI(System.getenv("postgres://bfdxdiynjljokx:0eeb528be0aa20cf7acd2c2495ad70f488bff6ce51f76a12e0d99f8b58c7ef51@ec2-54-225-190-241.compute-1.amazonaws.com:5432/d1p33dc4a3jqc0
+"));
+
+            String username = dbUri.getUserInfo().split(":")[0];
+            String password = dbUri.getUserInfo().split(":")[1];
+            String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath() + "?sslmode=require";
+
+            BasicDataSource basicDataSource = new BasicDataSource();
+            basicDataSource.setUrl(dbUrl);
+            basicDataSource.setUsername(username);
+            basicDataSource.setPassword(password);
+
+            return basicDataSource;
+        }
+    }
 }
